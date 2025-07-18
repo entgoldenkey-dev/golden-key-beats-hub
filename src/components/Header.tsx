@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Music, Mic, Users, Phone } from "lucide-react";
-import logoIcon from "@/assets/logo-icon.png";
+import logoIcon from "@/assets/golden-key-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -63,7 +63,7 @@ const Header = () => {
             {/* Desktop CTA */}
             <div className="hidden md:flex items-center space-x-4">
               <Button 
-                className="btn-golden"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-6 py-2 transition-all duration-300"
                 onClick={() => scrollToSection("#contato")}
               >
                 Gravar Agora
@@ -99,7 +99,7 @@ const Header = () => {
                 ))}
                 <div className="pt-4 border-t border-border">
                   <Button 
-                    className="w-full btn-chaos"
+                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-bold py-3 transition-all duration-300"
                     onClick={() => scrollToSection("#contato")}
                   >
                     <Mic className="mr-2 h-4 w-4" />
@@ -133,7 +133,7 @@ const Header = () => {
       {/* Floating Action Button for Mobile */}
       <button
         onClick={() => scrollToSection("#contato")}
-        className="fixed bottom-20 right-4 md:hidden w-14 h-14 rounded-full btn-golden shadow-chaos animate-pulse-glow z-40 flex items-center justify-center"
+        className="fixed bottom-20 right-4 md:hidden w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-golden hover:bg-primary/90 z-40 flex items-center justify-center transition-all duration-300"
       >
         <Mic className="w-6 h-6" />
       </button>

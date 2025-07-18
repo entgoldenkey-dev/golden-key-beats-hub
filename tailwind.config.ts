@@ -66,23 +66,21 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Golden Key Custom Colors
+				// Golden Key Premium Colors
 				golden: 'hsl(var(--primary))',
-				electric: 'hsl(var(--secondary))',
-				neon: 'hsl(var(--accent))',
+				premium: 'hsl(var(--secondary))',
+				elegant: 'hsl(var(--accent))',
 			},
 			backgroundImage: {
 				'gradient-golden': 'var(--gradient-golden)',
-				'gradient-electric': 'var(--gradient-electric)',
-				'gradient-neon': 'var(--gradient-neon)',
-				'gradient-chaos': 'var(--gradient-chaos)',
+				'gradient-premium': 'var(--gradient-premium)',
+				'gradient-elegant': 'var(--gradient-elegant)',
 				'gradient-dark': 'var(--gradient-dark)',
 			},
 			boxShadow: {
 				'golden': 'var(--shadow-golden)',
-				'electric': 'var(--shadow-electric)',
-				'neon': 'var(--shadow-neon)',
-				'chaos': 'var(--shadow-chaos)',
+				'premium': 'var(--shadow-premium)',
+				'elegant': 'var(--shadow-elegant)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

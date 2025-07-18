@@ -8,54 +8,52 @@
 
 @layer base {
   :root {
-    /* Core Brand Colors - Vibrantes e Urbanos */
-    --background: 0 0% 6%;
-    --foreground: 0 0% 98%;
+    /* Golden Key Entertainment - Premium Palette */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 95%;
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 100%;
 
-    /* Golden Key Primary - Dourado Vibrante */
-    --primary: 45 100% 60%;
-    --primary-foreground: 0 0% 6%;
+    /* Golden Key Primary - Dourado Premium */
+    --primary: 43 68% 56%;
+    --primary-foreground: 0 0% 0%;
 
-    /* Electric Purple - Energia */
-    --secondary: 270 100% 65%;
-    --secondary-foreground: 0 0% 98%;
+    /* Secondary - Variações douradas */
+    --secondary: 43 68% 56%;
+    --secondary-foreground: 0 0% 0%;
 
-    /* Neon Cyan - Contraste */
-    --accent: 180 100% 70%;
-    --accent-foreground: 0 0% 6%;
+    /* Accent - Dourado */
+    --accent: 43 68% 56%;
+    --accent-foreground: 0 0% 0%;
 
-    /* Electric Orange - Impacto */
-    --destructive: 15 100% 65%;
-    --destructive-foreground: 0 0% 98%;
+    /* Destructive - Dourado para alertas */
+    --destructive: 43 68% 56%;
+    --destructive-foreground: 0 0% 0%;
 
     /* Muted tones para equilibrio */
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 70%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 12%;
-    --ring: 45 100% 60%;
+    --border: 43 68% 56%;
+    --input: 0 0% 5%;
+    --ring: 43 68% 56%;
 
     --radius: 0.75rem;
 
-    /* Custom Brand Gradients */
-    --gradient-golden: linear-gradient(135deg, hsl(45 100% 60%), hsl(35 100% 55%));
-    --gradient-electric: linear-gradient(135deg, hsl(270 100% 65%), hsl(300 100% 70%));
-    --gradient-neon: linear-gradient(135deg, hsl(180 100% 70%), hsl(200 100% 65%));
-    --gradient-chaos: linear-gradient(45deg, hsl(45 100% 60%), hsl(270 100% 65%), hsl(180 100% 70%), hsl(15 100% 65%));
-    --gradient-dark: linear-gradient(135deg, hsl(0 0% 6%), hsl(0 0% 12%));
+    /* Premium Brand Gradients */
+    --gradient-golden: linear-gradient(135deg, hsl(43 68% 56%), hsl(43 68% 48%));
+    --gradient-premium: linear-gradient(135deg, hsl(0 0% 0%), hsl(43 68% 56%));
+    --gradient-elegant: linear-gradient(135deg, hsl(43 68% 56%), hsl(0 0% 0%));
+    --gradient-dark: linear-gradient(135deg, hsl(0 0% 0%), hsl(0 0% 5%));
 
-    /* Urban Shadows */
-    --shadow-golden: 0 10px 40px -10px hsl(45 100% 60% / 0.4);
-    --shadow-electric: 0 10px 40px -10px hsl(270 100% 65% / 0.3);
-    --shadow-neon: 0 10px 40px -10px hsl(180 100% 70% / 0.3);
-    --shadow-chaos: 0 20px 60px -10px hsl(45 100% 60% / 0.2), 0 10px 30px -5px hsl(270 100% 65% / 0.2);
+    /* Premium Shadows */
+    --shadow-golden: 0 10px 40px -10px hsl(43 68% 56% / 0.3);
+    --shadow-premium: 0 20px 60px -10px hsl(43 68% 56% / 0.2);
+    --shadow-elegant: 0 8px 32px -8px hsl(43 68% 56% / 0.25);
 
     /* Glitch Effects */
     --glitch-primary: hsl(45 100% 60%);
@@ -149,7 +147,7 @@
 }
 
 @layer components {
-  /* Golden Key Button Variants */
+  /* Golden Key Premium Button Variants */
   .btn-golden {
     @apply bg-primary text-primary-foreground font-bold py-4 px-8 rounded-lg;
     @apply hover:scale-105 active:scale-95;
@@ -158,67 +156,37 @@
     box-shadow: var(--shadow-golden);
   }
 
-  .btn-electric {
-    @apply bg-secondary text-secondary-foreground font-bold py-4 px-8 rounded-lg;
-    @apply hover:scale-105 active:scale-95;
-    @apply transition-all duration-300;
-    background: var(--gradient-electric);
-    box-shadow: var(--shadow-electric);
-  }
-
-  .btn-neon {
-    @apply bg-accent text-accent-foreground font-bold py-4 px-8 rounded-lg;
-    @apply hover:scale-105 active:scale-95;
-    @apply transition-all duration-300;
-    background: var(--gradient-neon);
-    box-shadow: var(--shadow-neon);
-  }
-
-  .btn-chaos {
+  .btn-premium {
     @apply text-foreground font-bold py-4 px-8 rounded-lg;
     @apply hover:scale-105 active:scale-95;
     @apply transition-all duration-300;
-    background: var(--gradient-chaos);
-    box-shadow: var(--shadow-chaos);
+    background: var(--gradient-premium);
+    box-shadow: var(--shadow-premium);
   }
 
-  /* Glitch Text Effect */
-  .text-glitch {
+  .btn-elegant {
+    @apply text-foreground font-bold py-4 px-8 rounded-lg;
+    @apply hover:scale-105 active:scale-95;
+    @apply transition-all duration-300;
+    background: var(--gradient-elegant);
+    box-shadow: var(--shadow-elegant);
+  }
+
+  /* Premium Text Effects */
+  .text-premium {
     position: relative;
-    color: var(--glitch-primary);
+    color: hsl(var(--primary));
     font-weight: 900;
   }
 
-  .text-glitch::before,
-  .text-glitch::after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .text-glitch::before {
-    animation: glitch-1 2s infinite linear alternate-reverse;
-    color: var(--glitch-secondary);
-    z-index: -1;
-  }
-
-  .text-glitch::after {
-    animation: glitch-2 2s infinite linear alternate-reverse;
-    color: var(--glitch-accent);
-    z-index: -2;
-  }
-
-  /* Chaos Background Pattern */
-  .chaos-bg {
+  /* Premium Background Pattern */
+  .premium-bg {
     background: var(--gradient-dark);
     position: relative;
     overflow: hidden;
   }
 
-  .chaos-bg::before {
+  .premium-bg::before {
     content: '';
     position: absolute;
     top: 0;
@@ -226,34 +194,33 @@
     right: 0;
     bottom: 0;
     background-image: 
-      radial-gradient(circle at 20% 50%, hsl(45 100% 60% / 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, hsl(270 100% 65% / 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 40% 80%, hsl(180 100% 70% / 0.1) 0%, transparent 50%);
-    animation: chaos-float 20s ease-in-out infinite;
+      radial-gradient(circle at 20% 50%, hsl(43 68% 56% / 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(43 68% 56% / 0.08) 0%, transparent 50%);
+    animation: float 15s ease-in-out infinite;
   }
 
-  /* Neon Border Effect */
-  .neon-border {
-    border: 2px solid transparent;
-    background: linear-gradient(hsl(var(--background)), hsl(var(--background))) padding-box,
-                var(--gradient-chaos) border-box;
+  /* Golden Border Effect */
+  .golden-border {
+    border: 1px solid hsl(var(--primary));
+    background: linear-gradient(hsl(var(--background)), hsl(var(--background))) padding-box;
     border-radius: var(--radius);
   }
 
-  /* Urban Card Styling */
-  .urban-card {
+  /* Premium Card Styling */
+  .premium-card {
     @apply bg-card border border-border rounded-lg p-6;
     @apply hover:scale-105 transition-all duration-300;
-    background: linear-gradient(135deg, hsl(0 0% 8%), hsl(0 0% 12%));
-    box-shadow: var(--shadow-chaos);
+    background: linear-gradient(135deg, hsl(0 0% 0%), hsl(0 0% 3%));
+    box-shadow: var(--shadow-premium);
+    border: 1px solid hsl(var(--primary) / 0.2);
   }
 
   /* Service Icon Hover */
   .service-icon {
     @apply w-16 h-16 rounded-full flex items-center justify-center;
     @apply transition-all duration-300 hover:scale-110;
-    background: var(--gradient-electric);
-    box-shadow: var(--shadow-electric);
+    background: var(--gradient-golden);
+    box-shadow: var(--shadow-golden);
   }
 
   /* Mobile First Navigation */
@@ -283,15 +250,15 @@
     -webkit-text-fill-color: transparent;
   }
 
-  .text-gradient-electric {
-    background: var(--gradient-electric);
+  .text-gradient-premium {
+    background: var(--gradient-premium);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
-  .text-gradient-chaos {
-    background: var(--gradient-chaos);
+  .text-gradient-elegant {
+    background: var(--gradient-elegant);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
