@@ -40,8 +40,8 @@ const Services = () => {
     },
     {
       icon: Mic,
-      title: "Lançamento e Marketing Musical",
-      description: "Organização estratégica de todas as etapas de um lançamento musical, desde o pré até o pós. Foco em aumentar alcance, engajamento e profissionalizar o processo.",
+      title: "Lançamento e Marketing",
+      description: "Organização estratégica completa do seu lançamento musical. Foco em aumentar alcance e profissionalizar o processo.",
       features: ["Cronograma completo", "Briefing e plano de conteúdo", "Estratégias de tráfego", "Calendário com datas-chave"],
       gradient: "gradient-golden"
     }
