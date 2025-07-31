@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Instagram, Youtube, Music, MapPin, Phone, Mail, MessageCircle } from "lucide-react";
-import logoIcon from "@/assets/logo-icon.png";
+import logoIcon from "/lovable-uploads/70e7fa60-a6b0-4e71-9007-45031badb7ef.png";
 
 const Footer = () => {
   const quickLinks = [
@@ -46,15 +46,7 @@ const Footer = () => {
             {/* Brand Section */}
             <div className="lg:col-span-1">
               <div className="flex items-center space-x-3 mb-6">
-                <img src={logoIcon} alt="Golden Key" className="w-12 h-12 animate-float" />
-                <div>
-                  <h3 className="font-roc font-black text-xl text-gradient-golden">
-                    GOLDEN KEY
-                  </h3>
-                  <p className="text-sm text-muted-foreground font-semibold">
-                    ENTERTAINMENT
-                  </p>
-                </div>
+                <img src={logoIcon} alt="Golden Key Entertainment" className="h-12 w-auto animate-float" />
               </div>
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Gravadora e estúdio independente especializada em rap/trap. 

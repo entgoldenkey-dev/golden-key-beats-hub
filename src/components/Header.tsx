@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Music, Mic, Users, Phone } from "lucide-react";
-import logoIcon from "@/assets/golden-key-logo.png";
+import logoIcon from "/lovable-uploads/70e7fa60-a6b0-4e71-9007-45031badb7ef.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,15 +35,7 @@ const Header = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center space-x-3 cursor-pointer" onClick={() => scrollToSection("#inicio")}>
-              <img src={logoIcon} alt="Golden Key" className="w-10 h-10 animate-float" />
-              <div>
-                <h1 className="font-roc font-black text-lg text-gradient-golden">
-                  GOLDEN KEY
-                </h1>
-                <p className="text-xs text-muted-foreground font-semibold">
-                  ENTERTAINMENT
-                </p>
-              </div>
+              <img src={logoIcon} alt="Golden Key Entertainment" className="h-10 w-auto animate-float" />
             </div>
 
             {/* Desktop Navigation */}
