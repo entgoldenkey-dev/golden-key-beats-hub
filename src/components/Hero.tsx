@@ -24,15 +24,10 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Main Title */}
-          <h1 className="text-6xl md:text-8xl font-roc font-black mb-6">
-            <span 
-              className="text-glitch text-gradient-chaos animate-pulse-glow" 
-              data-text="ONDE O CAOS"
-            >
-              ONDE O CAOS
-            </span>
+          <h1 className="text-6xl md:text-8xl font-roc font-black mb-6 text-white">
+            ONDE O CAOS
             <br />
-            <span className="text-gradient-golden text-7xl md:text-9xl">
+            <span className="text-golden">
               VIRA HIT
             </span>
           </h1>
@@ -64,12 +59,6 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
-              <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
-            </div>
-          </div>
         </div>
       </div>
 

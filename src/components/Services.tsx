@@ -37,6 +37,13 @@ const Services = () => {
       description: "Desenvolvemos a identidade visual e conceito artístico completo do seu projeto.",
       features: ["Branding musical", "Capas de álbum", "Identidade visual", "Consultoria artística"],
       gradient: "gradient-electric"
+    },
+    {
+      icon: Mic,
+      title: "Planejamento de Lançamento e Marketing Musical",
+      description: "Organização estratégica de todas as etapas de um lançamento musical, desde o pré até o pós. Foco em aumentar alcance, engajamento e profissionalizar o processo.",
+      features: ["Cronograma completo", "Briefing e plano de conteúdo", "Estratégias de tráfego", "Calendário com datas-chave"],
+      gradient: "gradient-golden"
     }
   ];
 
@@ -60,7 +67,7 @@ const Services = () => {
             {services.map((service, index) => (
               <div 
                 key={index}
-                className="urban-card group cursor-pointer"
+                className="urban-card group cursor-pointer h-full flex flex-col"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Service Icon */}
@@ -79,7 +86,7 @@ const Services = () => {
                 </p>
 
                 {/* Service Features */}
-                <ul className="space-y-2 mb-6">
+                <ul className="space-y-2 mb-6 flex-grow">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center text-sm text-foreground">
                       <div className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0"></div>
@@ -89,7 +96,7 @@ const Services = () => {
                 </ul>
 
                 {/* CTA Button */}
-                <Button className="w-full btn-electric group-hover:btn-golden transition-all duration-300">
+                <Button className="w-full btn-electric group-hover:btn-golden transition-all duration-300 mt-auto">
                   Quero esse serviço
                 </Button>
               </div>
