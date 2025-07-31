@@ -6,31 +6,31 @@ const Artists = () => {
     {
       name: "VINCXNT",
       genre: "Boombap",
-      image: "/lovable-uploads/71eb47ca-0c7f-45c4-8900-57ba8c378a27.png",
+      image: "/lovable-uploads/d5c3d470-13a3-404f-99a0-4152cbb143f3.png",
       tracks: 15
     },
     {
       name: "JHUANITO", 
       genre: "Trap/Drill",
-      image: "/lovable-uploads/d5c3d470-13a3-404f-99a0-4152cbb143f3.png",
+      image: "/lovable-uploads/9c11282e-2160-4e82-be78-481f56e9ecf7.png",
       tracks: 12
     },
     {
       name: "NT_BS",
       genre: "Trap/Drill/Funk",
-      image: "/lovable-uploads/aebc85dd-8a88-4dba-97d8-2a97398ec6a8.png",
+      image: "/lovable-uploads/a304db14-660a-4d7b-a4e4-c5ef25187fdd.png",
       tracks: 8
     },
     {
       name: "DJ KYRIOS",
       genre: "Funk/DJ",
-      image: "/lovable-uploads/9c11282e-2160-4e82-be78-481f56e9ecf7.png",
+      image: "/lovable-uploads/aebc85dd-8a88-4dba-97d8-2a97398ec6a8.png",
       tracks: 5
     },
     {
       name: "iODES",
       genre: "Boombap",
-      image: "/lovable-uploads/a304db14-660a-4d7b-a4e4-c5ef25187fdd.png",
+      image: "/lovable-uploads/71eb47ca-0c7f-45c4-8900-57ba8c378a27.png",
       tracks: 7
     },
     {
