@@ -5,51 +5,51 @@ const Artists = () => {
   const artists = [
     {
       name: "VINCXNT",
-      genre: "Trap/Drill",
-      image: "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?w=400&h=400&fit=crop&crop=faces",
+      genre: "Boombap",
+      image: "/lovable-uploads/d5c3d470-13a3-404f-99a0-4152cbb143f3.png",
       tracks: 15
     },
     {
       name: "JHUANITO", 
-      genre: "Trap Melódico",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces",
+      genre: "Trap/Drill",
+      image: "/lovable-uploads/9c11282e-2160-4e82-be78-481f56e9ecf7.png",
       tracks: 12
     },
     {
       name: "NT_BS",
-      genre: "Rap Consciente",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=faces",
+      genre: "Trap/Drill/Funk",
+      image: "/lovable-uploads/a304db14-660a-4d7b-a4e4-c5ef25187fdd.png",
       tracks: 8
     },
     {
-      name: "KYRIOS",
-      genre: "Phonk Brasileiro",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop&crop=faces",
+      name: "DJ KYRIOS",
+      genre: "Funk/DJ",
+      image: "/lovable-uploads/aebc85dd-8a88-4dba-97d8-2a97398ec6a8.png",
       tracks: 5
     },
     {
-      name: "JU",
-      genre: "Trap Feminino",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b788?w=300&h=300&fit=crop&crop=faces",
+      name: "iODES",
+      genre: "Boombap",
+      image: "/lovable-uploads/71eb47ca-0c7f-45c4-8900-57ba8c378a27.png",
       tracks: 7
     },
     {
-      name: "GT",
-      genre: "Drill Nacional",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop&crop=faces",
-      tracks: 4
-    },
-    {
       name: "RXBIN",
-      genre: "Rap Experimental",
-      image: "https://images.unsplash.com/photo-1463453091185-61582044d556?w=300&h=300&fit=crop&crop=faces",
+      genre: "Boombap/DJ",
+      image: "/lovable-uploads/976f13a0-95b4-4d8e-b83d-1f3adeafc8eb.png",
       tracks: 6
     },
     {
       name: "TINNE",
-      genre: "Trap Melódico",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop&crop=faces",
+      genre: "R&B",
+      image: "/lovable-uploads/ffd26faa-0b90-412d-b373-0452f292c49c.png",
       tracks: 9
+    },
+    {
+      name: "MC GT",
+      genre: "Funk",
+      image: "/lovable-uploads/bba06fe5-e1b2-486d-b33b-006e04219cf3.png",
+      tracks: 4
     }
   ];
 
