@@ -9,7 +9,7 @@ const Projects = () => {
     releaseDate: "2024",
     tracks: 12,
     streams: "150K+",
-    coverUrl: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=400&fit=crop&crop=center",
+    coverUrl: "/lovable-uploads/6c51ed08-072c-45a7-8bdc-c8582707cdbb.png",
     spotifyUrl: "#",
     youtubeUrl: "#"
   };
